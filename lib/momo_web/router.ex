@@ -17,7 +17,8 @@ defmodule MomoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/momo", PageController, :index
+    get "/game", GameController, :index
+    get "/game/:messenger", GameController, :show
   end
 
   # Other scopes may use custom stacks.
